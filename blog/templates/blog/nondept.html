@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Monitor Template - About</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--
+Template 2071 Monitor
+http://www.tooplate.com/view/2071-monitor
+-->
+<link href="{% static 'css/tooplate_style.css' %}" rel="stylesheet" type="text/css" />
+<script type="text/JavaScript" src="{% static 'js/jquery-1.6.3.js' %}"></script> 
+<link rel="stylesheet" href="{% static 'css/slimbox2.css' %}" type="text/css" media="screen" />
+<script type="text/JavaScript" src="{% static 'js/slimbox2.js' %}"></script> 
+<link rel="stylesheet" href="{%static 'css/nivo-slider.css' %}" type="text/css" media="screen" />
+<link rel="stylesheet" href="{%static 'css/tooplate_style.css' %}" type="text/css" media="screen" />
+
+</head>
+<body>
+
+<div id="tooplate_header_wrapper">
+	<div id="tooplate_header" class="wrapper">
+    	<div id="top_menu">
+            <ul class="header_menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="{% url 'dept' %}" >Department</a></li>
+                <li><a href="{% url 'nondept' %}" class="selected" >Non-Dept</a></li>
+            </ul>
+		</div>
+        <div class="clear"></div>
+        <a href="index.html" class="sitetitle">Free CSS Templates</a>
+
+        <div id="tooplate_menu">
+            <ul class="header_menu">
+                <li><a href="{% url 'nondeptresource' %}">Non-Resource</a></li>
+
+            </ul>
+		</div>
+
+        <div id="tooplate_slider">
+
+            <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">                
+
+                    <img src="{% static "images/slider/01.jpg" %}" alt="" title="" />
+                    <img src="{% static "images/slider/02.jpg" %}" alt="" title="" />
+                     <img src="{% static "images/slider/01.jpg" %}" alt="" title="" />
+                    <img src="{% static "images/slider/03.jpg" %}" alt="" title="" />                
+                </div>
+            </div>
+
+            <script type="text/javascript" src="{%static 'js/jquery-1.6.3.min.js' %}"></script>
+            <script type="text/javascript" src="{%static 'js/jquery.nivo.slider.pack.js' %}"></script>
+            <script type="text/javascript">
+            $(window).load(function() {
+                $('#slider').nivoSlider({
+                effect: 'random',
+                controlNav: true, // 1,2,3... navigation
+                directionNav: false,
+                animSpeed: 800, // Slide transition speed
+                pauseTime: 4000, // How long each slide will show
+                });
+            });
+            </script>	
+        </div> <!-- END of slider -->
+    </div> <!-- END of header -->
+</div> <!-- END of tooplate_header_wrapper -->
+
+    <div id="tooplate_main">
+    	<div class="content_wrapper content_mb_60">
+        	<h1 style="text-align: center;">নন-ডিপার্টমেন্ট আংশে আপনাকে স্বাগতম</h1>
+            <div class="col_2">
+            	<div class="img_border img_border_m" style="text-align: center;">
+                	<img src="{% static "book/ph.jpg" %}" alt="image" width="300px" height="340px"  />
+                </div>
+            </div>
+
+            <div class="col_2 no_margin_right">
+            	<h2>About Physics</h2>
+              <p><em>In 1980, the Department of Physics of Dhaka University of Engineering & Technology, Gazipur started functioning as a full-fledged department. The department has eight faculty members. It has been offering a wide range of physics courses to the undergraduate students of various engineering discipline. </em></p>
+                <p>The department of Physics, DUET started postgraduate program from the year 2010. This program is mainly designed and initiated keeping in mind the need teaching the students fundamental, applied and advanced courses in different areas of physical and applied sciences and to explore new avenues to basic, applied as well as advanced research work.</p>
+                
+          </div>
+
+        </div>
+
+        <div class="content_wrapper content_mb_60">
+            
+            <div class="col_2">
+                <div class="img_border img_border_m" style="text-align: center;">
+                    <img src="{% static "book/ch.jpg" %}" alt="image" width="300px" height="340px"  />
+                </div>
+            </div>
+
+            <div class="col_2 no_margin_right">
+                <h2>About Chemistry</h2>
+              <p><em>We are trying our best to provide quality chemistry knowledge</em></p>
+                <p> Welcome to the Department of Chemistry, Dhaka University of Engineering and Technology (DUET), Gazipur. It is a full-fledged department from the very inception of this University in 1980. This department has been offering both theoretical and practical courses to cater for the need of the undergraduate engineering students.</p>
+                <p>In the year 2010, the department embarked on postgraduate programme (M.S., M. Phil & Ph. D) for both full-time as well as part-time students. Here research, especially at the postgraduate level, is one of its prime focuses. </p>
+                
+          </div>
+
+        </div>
+
+        <div class="content_wrapper content_mb_60">            
+            <div class="col_2">
+                <div class="img_border img_border_m" style="text-align: center;">
+                    <img src="{% static "book/math.JPG" %}" alt="image" width="300px" height="340px"  />
+                </div>
+            </div>
+
+            <div class="col_2 no_margin_right">
+                <h2>About Mathemathics</h2>
+              <p><em>The Department of Mathematics attained its present status of an independent department in 1980.</em></p>
+                <p>The Department of Mathematics at this university has an active research faculty, including participation in interdisciplinary collaborations. Faculty members in the Department of Mathematics at this University conduct research in the following areas: Fluid Flow, Computational Fluid Dynamics, Aerodynamics, Turbulent flow, Blood flow, Lattice Boltzmann Method,  MHD flow, Heat Transfer, Algebra and Number theory, Analysis and differential equations, Bioinformatics and mathematical biology, Discrete mathematics, Mathematics education, and Probability and stochastic processes. Our faculties are publishing their research finding in various reputed international and national Journals and also presenting their works in various conferences.  Furthermore, department is always active in hosting of various national conference, seminar and workshop in diverse part of mathematics. We are also determined to create an excellent academic and research environment with full cooperation of our qualified colleagues, faculties and students for the welfare of DUET.</p>
+          </div>
+
+        </div>
+
+        <div class="content_wrapper content_mb_60">
+            <div class="col_2">
+                <div class="img_border img_border_m"  style="text-align: center;">
+                    <img src="{% static "book/eng.jpg" %}" alt="image" width="300px" height="340px"  />
+                </div>
+            </div>
+
+            <div class="col_2 no_margin_right">
+                <h2>About English</h2>
+              <p><em>Being the multidisciplinary Department, HSS offers courses in undergraduate engineering programs namely;</em></p>
+                <p>It gives me immense pleasure in welcoming you to explore the virtual world of the Department of Humanities and Social Sciences (HSS) at Dhaka University of Engineering and Technology. Established in the year 1980, as Department of Humanities, it has made a remarkable progress in a short span of time by fulfilling the major objective-to provide a student-centered communicative education, by which students would not only obtain specific knowledge about the disciplines they major in, but also develop critical thinking perspectives that could be applied in attaining academic excellence as well as in their professional life. In this changing trend, the Department of Humanities has been renamed as the Department of Humanities and Social Sciences (HSS) since 2012.</p>
+          </div>
+
+        </div>
+
+
+        <div class="clear"></div>
+        <div style="display:none;" class="nav_up" id="nav_up"></div>
+    </div>
+
+
+<div id="tooplate_footer_wrapper">
+	<div id="tooplate_footer" class="wrapper">
+
+    <div style="text-align: right;">
+            <ul class="nobullet bottom_list">
+                <img src="{% static "logo/fb.png" %}" alt="Icon" width="40px" height="40px" />
+                <img src="{% static "logo/google.png" %}" alt="Icon" width="40px" height="40px" />
+                <img src="{% static "logo/gmail.png" %}" alt="Icon" width="40px" height="40px" />
+                <img src="{% static "logo/twiter.png" %}" alt="Icon" width="40px" height="40px" />
+            </ul>
+        </div>  
+
+
+    <div class="clear"></div>
+    </div> <!-- END of tooplate_footer -->
+
+    </div> <!-- END of tooplate_footer_wrapper -->
+
+    <div id="tooplate_copyright_wrapper">
+        <div id="tooplate_copyright" class="wrapper">
+            Copyright © bitBox Group CSE-14th Batch   
+        </div>
+    </div>
+
+<script src="{%static 'js/scroll-startstop.events.jquery.js' %}" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function() {
+		var $elem = $('#content');
+		
+		$('#nav_up').fadeIn('slow');
+		
+		$(window).bind('scrollstart', function(){
+			$('#nav_up,#nav_down').stop().animate({'opacity':'0.2'});
+		});
+		$(window).bind('scrollstop', function(){
+			$('#nav_up,#nav_down').stop().animate({'opacity':'1'});
+		});
+		
+		$('#nav_up').click(
+			function (e) {
+				$('html, body').animate({scrollTop: '0px'}, 800);
+			}
+		);
+	});
+</script>
+
+</body>
+</html>

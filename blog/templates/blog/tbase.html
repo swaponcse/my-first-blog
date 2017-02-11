@@ -1,0 +1,93 @@
+{% load staticfiles %}
+{% load static %}
+<html>
+    <head>
+        <title>Duet CSE 14th Batch</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+    </head>
+    
+    <body >
+    
+    
+ <div class="page-header">
+
+    {% if user.is_authenticated %}
+        <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
+        <p class="top-menu">Hello {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
+    {% else %}
+        <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+    {% endif %}
+    
+    <h2 style="text-align:center;" ><a href="{% url 'news' %}"><b>Dhaka University of Engineering  Technology(DUET)<br>Gazipur-1700</b></a></h2>
+    <div style="position: absolute;top:5px; left: 5px; padding: 10px;">
+        <img src="{% static "image/logo2.png" %}  " width="150px" height="150px"  />
+    </div>
+
+</div>
+
+ <div class="fix main">
+            <div class="fix header">
+                <img src="{% static "image/main.jpg" %}  " width="980px" height="200px" />
+            </div>
+            <div style="position: absolute;left: 150px; top: 100px;" class="fix slider">
+                <div class="slider_text">
+                    
+                    <h1>Computer Science Engineering,Duet</h1>
+                    <h2>bitBox Group</h2>
+                    
+                </div>
+            </div>          
+            <div class="fix maincontain">
+                
+
+
+
+<div class="fix sidebar">
+                    <ul>
+                        <li><a href='\'>Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="https://www.facebook.com/groups/duetcse14thbatch">Help</a></li>
+                        <li><a href="">Source</a></li>
+
+                    </ul>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+                <div class="fix contain">
+                    <div >
+            <div  >
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>              
+                </div>                              
+            </div>
+            
+            <div class="fix footer"> 
+                <p>&copy; Duet cse 14th batch</p>
+            </div>          
+        </div>
+        
+        
+               
+    </body>
+</html>

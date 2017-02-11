@@ -1,0 +1,25 @@
+{% extends 'blog/regcomplete.html' %}
+
+
+
+
+
+
+
+
+{% block content %}
+    {% for student in students %}
+        <div class="post">
+
+  
+             <p>{{ student.name }}</p>
+             <p>{{ student.std_id }}</p>
+             <p>{{ student.mobile }}</p>
+             <p>{{ student.email }}</p>
+             <p>{{ student.department|linebreaksbr }}</p>
+         
+        </div>
+
+    {% endfor %}
+{% endblock  %}
+
